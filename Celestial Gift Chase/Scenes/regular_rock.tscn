@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxo33lr7vt1cp"]
+
+[ext_resource type="Texture2D" uid="uid://c0m57gp6mnmrw" path="res://assets/With Transparent Shadows/Regular/rock_shadow.png" id="1_tb2ml"]
+
+[node name="RegularRock" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_tb2ml")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+scale = Vector2(3, 3)
+polygon = PackedVector2Array(7.33333, 0.666667, 6.7127, 1.59761, 6, 2.66667, 5, 3.66667, 3.66667, 3.66667, 2.66667, 4.66667, -2, 4.66667, -2.66667, 3.66667, -4, 3.66667, -4.33333, 2.66667, -7, 2.66667, -7.33333, 1.66667, -8, 1.66667, -8, 0.333333, -7.33333, -0.333333, -7.33333, -1.33333, -6.33333, -1.33333, -6.33333, -2.33333, -4, -2.33333, -4, -3.66667, -2, -3.66667, -2, -4.66667, 0, -4.66667, 0, -5.66667, 2, -5.66667, 2.33333, -4.66667, 5, -4.66667, 5.33333, -3.66667, 6, -3.66667, 6, -2.66667, 7, -2.66667, 7.33333, -1.66667, 8, -1.66667, 8, 0.333333)

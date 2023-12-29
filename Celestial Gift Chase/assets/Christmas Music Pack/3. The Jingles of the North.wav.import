@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cryqhfyw4w6wx"
+path="res://.godot/imported/3. The Jingles of the North.wav-a9c1cd56ab25f51c0021cc8765b8607a.sample"
+
+[deps]
+
+source_file="res://assets/Christmas Music Pack/3. The Jingles of the North.wav"
+dest_files=["res://.godot/imported/3. The Jingles of the North.wav-a9c1cd56ab25f51c0021cc8765b8607a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

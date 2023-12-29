@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://biw4vcaot62jp"]
+
+[ext_resource type="Texture2D" uid="uid://bfo5vwtseo3ed" path="res://assets/snowv2.png" id="2_yqde1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4g0g5"]
+size = Vector2(70, 640)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6xdg"]
+size = Vector2(360, 20)
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(0, 640)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture = ExtResource("2_yqde1")
+centered = false
+
+[node name="Walls" type="Node2D" parent="."]
+
+[node name="Left Wall" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Left Wall"]
+position = Vector2(-35, 320)
+shape = SubResource("RectangleShape2D_4g0g5")
+
+[node name="Right Wall" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Right Wall"]
+position = Vector2(395, 320)
+shape = SubResource("RectangleShape2D_4g0g5")
+
+[node name="Bottom Wall" type="StaticBody2D" parent="Walls"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Bottom Wall"]
+position = Vector2(180, 650)
+shape = SubResource("RectangleShape2D_p6xdg")

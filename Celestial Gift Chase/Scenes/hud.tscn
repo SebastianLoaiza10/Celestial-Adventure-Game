@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca708od3ob3h4"]
+
+[ext_resource type="FontFile" uid="uid://fe5lrsq3kibl" path="res://assets/playful_christmas/Playful Christmas-Personal Use.otf" id="1_wlwyk"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -37.5
+offset_top = 36.0
+offset_right = 37.5
+offset_bottom = 61.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.541176, 0.384314, 0.25098, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.568627)
+theme_override_fonts/font = ExtResource("1_wlwyk")
+theme_override_font_sizes/font_size = 40
+text = "Score:"
+horizontal_alignment = 1
+
+[node name="StartLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.5
+offset_top = -11.5
+offset_right = 88.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.541176, 0.384314, 0.25098, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.568627)
+theme_override_fonts/font = ExtResource("1_wlwyk")
+theme_override_font_sizes/font_size = 25
+text = "PRESS SPACE TO START"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NameLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -73.5
+offset_top = 46.0
+offset_right = 73.5
+offset_bottom = 111.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.541176, 0.384314, 0.25098, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.568627)
+theme_override_fonts/font = ExtResource("1_wlwyk")
+theme_override_font_sizes/font_size = 50
+text = " Celestial 
+Gift Chase"

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqyorsivmr7fj"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_2xgn7"]
+[ext_resource type="PackedScene" uid="uid://biw4vcaot62jp" path="res://Scenes/bg.tscn" id="1_b8hfx"]
+[ext_resource type="PackedScene" uid="uid://c2n0juchdg84s" path="res://Scenes/wizard_guy.tscn" id="2_n5cnb"]
+[ext_resource type="PackedScene" uid="uid://ca708od3ob3h4" path="res://Scenes/hud.tscn" id="3_yfws1"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_2xgn7")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_b8hfx")]
+
+[node name="Wizard" parent="." instance=ExtResource("2_n5cnb")]
+
+[node name="HUD" parent="." instance=ExtResource("3_yfws1")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(180, 320)
